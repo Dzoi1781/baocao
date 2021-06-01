@@ -8,7 +8,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>     
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="BBC.css">
+        <link rel="stylesheet" href="Homepage.css">
         <title>ủa rồi ra chưa?</title>
     </head>
     <body>
@@ -17,60 +17,62 @@
                   <h6>Get 1 free Tote Bag when buying products from 300,000 VND<br>
                     Orders get FreeShip when buying from 1,500,000 VND</h6>
               <div class="signin-shopping" style="text-align:right; padding-top: 1px;">
-                  <i class="fa fa-sign-in" aria-hidden="true"></i><a href="Login.html" class="login"> Sign in</a> |
-                  <i class="fa fa-shopping-bag" aria-hidden="true"></i> <a href="#" class="shopping"> Shopping</a>
+                    <a href="#search" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i></a>|
+                    <i class="fa fa-sign-in" aria-hidden="true"></i><a href="Login.html" class="login"> Sign in</a> |
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i> <a href="#" class="shopping"> Shopping</a>
               </div>
             </div>
         </div>
 
         <div class="bs-example" style="padding: 10px;">
-            <nav class="nav nav-pills">
+            <nav class="nav nav-pills navbar navbar-expand-md navbar-light d-flex">
                 <img src="logotsun.png" style="height: 40px;">
-                <a href="#" class="dropbtn">Home Page</a>
-                <div class="dropdown">
-                    <a href="#" class="dropbtn">Product</a>
-                        <div class="dropdown-content">
-                            <a href="#">Shop All</a>
-                            <a href="#">Tee</a>
-                            <a href="#">Jacket</a>
-                            <a href="#">Accessories</a>
-                            <a href="#">Pants</a>
-                            <a href="#">Hoodie</a>
-                            <a href="#">Sweater</a>
-                        </div>
-                </div>
-
-                <div class ="dropdown">
-                    <a href="#" class="dropbtn">On Sale</a>
-                        <div class="dropdown-content">
-                            <a href="#">10%</a>
-                            <a href="#">20%</a>
-                            <a href="#">30%</a>
-                            <a href="#">40%</a>
-                            <a href="#">50%</a>
-                            <a href="#">60%</a>
-                            <a href="#">70%</a>
-                        </div>
-                </div>
-
-                <div class ="dropdown">
-                    <a href="#" class="dropbtn">Tutoral</a>
-                        <div class="dropdown-content">
-                            <a href="#">Security</a>
-                            <a href="#">Product return</a>
-                            <a href="#">Contact</a>
-                        </div>
-                </div>
-
+                <div class="collapse navbar-collapse mx-3" id="navbar-toggle">
+                    <a href="#" class="dropbtn">Home Page</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Product</a>
+                            <div class="dropdown-content">
+                                <a href="#">Shop All</a>
+                                <a href="#">Tee</a>
+                                <a href="#">Jacket</a>
+                                <a href="#">Accessories</a>
+                                <a href="#">Pants</a>
+                                <a href="#">Hoodie</a>
+                                <a href="#">Sweater</a>
+                            </div>
+                    </div>
+                    <div class ="dropdown">
+                        <a href="#" class="dropbtn">On Sale</a>
+                            <div class="dropdown-content">
+                                <a href="#">10%</a>
+                                <a href="#">20%</a>
+                                <a href="#">30%</a>
+                                <a href="#">40%</a>
+                                <a href="#">50%</a>
+                                <a href="#">60%</a>
+                                <a href="#">70%</a>
+                            </div>
+                    </div>
+                    <div class ="dropdown">
+                        <a href="#" class="dropbtn">Tutoral</a>
+                            <div class="dropdown-content">
+                                <a href="#">Security</a>
+                                <a href="#">Product return</a>
+                                <a href="#">Contact</a>
+                            </div>
+                    </div>
                     <a href="#" class="dropbtn">Size Table</a>
-                    <a href="#" class="dropbtn">About TSUN</a>
-
-                <nav class="navbar-light justify-content-between">
+                    <a href="Introduce.html" class="dropbtn">About TSUN</a>
+                </div>
+                <nav class="justify-content-between">
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="The shirt you need.." aria-label="Search" style="border: sizing 10px;">
                         <button type="button" class="btn bg-white border" style="color: #5ac1b0;">Search</button>
                     </form>
                 </nav>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
           </nav>
         </div>
 
@@ -192,40 +194,54 @@
                 </div>
 
  
-        <footer class="bg-white">
-            <div class="container py-3">
-                <div class="row py-3">
-                    <div class="col-lg-4 col-md-2 mb-5 mb-lg-0">
-                        <h5 class="text-uppercase font-weight-bold mb-4">INTRODUCE</h5>
-                        <p>tsunsg The Shirt You Need - TSUN was established in 2016, all TSUN products are designed and manufactured by ourselves based on quality criteria. All TSUN products are copyrighted by TSUN</p>             
-                        <img src="lg.png" class="img-rounded pull-left alt="lgtsun" style="width:50%">
+                <footer class="bg-dark">
+                    <div class="container py-3">
+                        <div class="row py-3">
+                            <div class="col-lg-4 col-md-2 mb-5 mb-lg-0">
+                                <h5 class="text-uppercase font-weight-bold mb-4">INTRODUCE</h5>
+                                <p>tsunsg The Shirt You Need - TSUN was established in 2016, all TSUN products are designed and manufactured by ourselves based on quality criteria. All TSUN products are copyrighted by TSUN</p>             
+                                <img src="lg.png" class="img-rounded pull-left alt="lgtsun" style="width:50%">
+                            </div>
+        
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase font-weight-bold mb-4">LINKS</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><a href="#" class="text-white" >Home Page</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Product</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">On Sale</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Tutorial</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Size Table</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">About TSUN</a></li>
+                            </ul>
                     </div>
-
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <h5 class="text-uppercase font-weight-bold mb-4">LINKS</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a href="#" class="text-muted">Home Page</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Product</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">On Sale</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Tutorial</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Size Table</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">About TSUN</a></li>
-                    </ul>
-            </div>
-
-            <div class="col-lg-5 col-md-2 mb-5 mb-lg-0">
-                    <h5 class="text-uppercase font-weight-bold mb-4">CONTACT INFO</h5>
-                        <p><i class="fa fa-home" aria-hidden="true"></i> HCM 🔥 350 Dien Bien Phu, Binh Thanh District. </p>
-                        <p><i class="fa fa-home" aria-hidden="true"></i> HCM 🔥 90 Le Lai, 1 District.</p>
-                        <p><i class="fa fa-home" aria-hidden="true"></i> HCM 🔥 26 Ly Tu Trong, 1 District.</p>
-                        <p><i class="fa fa-home" aria-hidden="true"></i> Ha Noi 🔥 7th floor, Vicom Ba Trieu, B Building.</p>   
-                        <p><i class="fa fa-home" aria-hidden="true"></i> Bien Hoa 🔥 43 Duong Tu Giang, Tan Tien.</p>  
-                        <p><i class="fa fa-home" aria-hidden="true"></i> Can Tho 🔥 15 Nguyen Viet Hong, Ninh Kieu.</p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i> Hotline 0934 076 342</p>
-                        <p><i class="fa fa-envelope" aria-hidden="true"></i>  tsunsg@gmail.com</p>
-            </div>
+        
+                    <div class="col-lg-5 col-md-2 mb-5 mb-lg-0">
+                            <h5 class="text-uppercase font-weight-bold mb-4">CONTACT INFO</h5>
+                                <p><i class="fa fa-home" aria-hidden="true"></i> HCM 🔥 350 Dien Bien Phu, Binh Thanh District. </p>
+                                <p><i class="fa fa-home" aria-hidden="true"></i> HCM 🔥 90 Le Lai, 1 District.</p>
+                                <p><i class="fa fa-home" aria-hidden="true"></i> HCM 🔥 26 Ly Tu Trong, 1 District.</p>
+                                <p><i class="fa fa-home" aria-hidden="true"></i> Ha Noi 🔥 7th floor, Vicom Ba Trieu, B Building.</p>   
+                                <p><i class="fa fa-home" aria-hidden="true"></i> Bien Hoa 🔥 43 Duong Tu Giang, Tan Tien.</p>  
+                                <p><i class="fa fa-home" aria-hidden="true"></i> Can Tho 🔥 15 Nguyen Viet Hong, Ninh Kieu.</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> Hotline 0934 076 342</p>
+                                <p><i class="fa fa-envelope" aria-hidden="true"></i>  tsunsg@gmail.com</p>
+                    </div>
+                        </div>
+                    </div>
+                </footer>
+        <div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <nav class="justify-content-between">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="The shirt you need.." aria-label="Search" style="border: sizing 10px;">
+                            <button type="button" class="btn bg-white border" style="color: #5ac1b0;">Search</button>
+                        </form>
+                    </nav>
                 </div>
+              </div>
             </div>
-        </footer>
+          </div>
     </body>
 </html>
